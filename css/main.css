@@ -1,0 +1,21 @@
+.js-accord-head {
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+.js-accord-body {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s ease;
+}
+.js-accord-content {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.--js-accord_open.js-accord-body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}

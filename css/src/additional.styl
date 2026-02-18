@@ -1,0 +1,42 @@
+.container
+  max-width 1400px
+  margin 0 auto
+  padding 0 20px
+
+.btn
+  background transparent
+  font inherit
+  color inherit
+  cursor pointer
+  border none
+  outline none
+
+// accordeon styling
+.accordeon
+  &-group
+    margin 40px 0
+  &__list
+    list-style-type none
+    padding 0
+    left 0
+    display flex
+    flex-direction column
+    gap 20px
+    &-item 
+      position relative
+      border 1px solid #ffed9e
+      border-radius 20px
+      &-head
+        padding 20px
+      &-body
+        &-content
+          padding 20px
+          padding-top 0
+          &-overflow
+            max-height 400px
+            padding-right 12px
+            overflow hidden
+            overflow-y auto
+            scrollbar-width thin
+            scrollbar-color #ffed9e transparent  
+

@@ -1,0 +1,20 @@
+// js functional styling
+.js-accord
+  &-head
+    position relative
+    width 100%
+    text-align left
+  &-body
+    position relative
+    overflow hidden
+    height 0
+    transition height .5s ease
+  &-content
+    height fit-content
+
+// opened state
+.--js-accord_open
+  &.js-accord
+    &-body
+      height fit-content
+

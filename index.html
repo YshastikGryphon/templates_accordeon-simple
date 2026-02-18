@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accordeon</title>
+  <script src="jquery.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #081125;
+      color: #e5e5e5;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="css/textcontent.css">
+  <link rel="stylesheet" href="css/additional.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <section class="accordeon">
+    <div class="container">
+      <div class="accordeon-group">
+        <!--
+          list of accordeon elements
+
+          class:
+          js-accords_one - only one can be oppened at a time
+          js-accords_mult - no restrictions
+        -->
+        <ul class="accordeon__list js-accords_mult">
+          <!--
+            accordeon element.
+
+            js-accord - root 
+            js-accord-head - open/close button
+            js-accord-body - wrapper to show-hide content. Animate this.
+            js-accord-content - maximum size of inner content. Used for animations. Do not animate this element.
+
+            class:
+            --js-accord_open - openned state
+          -->
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element mult</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum nisi. Reiciendis.
+                      </p>
+                      <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- *** -->
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element mult</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <h3> Overflow Test</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus
+                        asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum
+                        nisi. Reiciendis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- *** -->
+      <div class="accordeon-group">
+        <ul class="accordeon__list js-accords_one">
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element one</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum nisi. Reiciendis.
+                      </p>
+                      <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element one</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <h3> Overflow Test</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus
+                        asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum
+                        nisi. Reiciendis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element one</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum nisi. Reiciendis.
+                      </p>
+                      <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- *** -->
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element one</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <h3> Overflow Test</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus
+                        asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum
+                        nisi. Reiciendis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- *** -->
+      <div class="accordeon-group">
+        <ul class="accordeon__list js-accords_one">
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn --js-accord_open">
+              <span>Accordeon Element one</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum nisi. Reiciendis.
+                      </p>
+                      <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- *** -->
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element one</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <h3> Overflow Test</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus
+                        asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum
+                        nisi. Reiciendis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="accordeon-group">
+        <ul class="accordeon__list js-accords_mult">
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element mult</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum nisi. Reiciendis.
+                      </p>
+                      <ul>
+                        <li>point 1</li>
+                        <li>point 2</li>
+                        <li>point 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- *** -->
+          <li class="accordeon__list-item js-accord">
+            <button class="accordeon__list-item-head js-accord-head btn">
+              <span>Accordeon Element mult</span>
+            </button>
+            <div class="accordeon__list-item-body js-accord-body">
+              <div class="js-accord-content"> <!-- do not add classes -->
+                <div class="accordeon__list-item-body-content">
+                  <div class="accordeon__list-item-body-content-overflow">
+                    <div class="textcontent">
+                      <h3> Overflow Test</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat at velit molestiae minus
+                        asperiores alias sint obcaecati, illum voluptate impedit consequatur earum vero rem aliquid et harum
+                        nisi. Reiciendis.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore a assumenda voluptate eaque ipsam quo
+                        vero officia quasi? Eligendi sequi nostrum alias et at facilis unde ipsam eaque. Vitae, cumque.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

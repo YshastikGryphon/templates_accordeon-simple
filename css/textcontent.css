@@ -1,0 +1,140 @@
+:root {
+  --base-ffamily: Arial, Helvetica, sans-serif;
+  --font-h1: 600 56px/64px var(--base-ffamily);
+  --font-h2: 500 42px/52px var(--base-ffamily);
+  --font-h3: 600 28px/32px var(--base-ffamily);
+  --font-h4: 500 22px/28px var(--base-ffamily);
+  --font-base: 400 18px/24px var(--base-ffamily);
+  --font-small: 400 16px/20px var(--base-ffamily);
+  --margin-list: 20px;
+  --margin-base: 20px;
+}
+@media (max-width: 1440px) {
+  :root {
+    --font-h1: 600 48px/56px var(--base-ffamily);
+    --font-h2: 500 36px/42px var(--base-ffamily);
+    --font-h3: 600 24px/28px var(--base-ffamily);
+    --font-h4: 500 18px/24px var(--base-ffamily);
+    --font-base: 400 16px/24px var(--base-ffamily);
+    --font-small: 400 14px/18px var(--base-ffamily);
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --font-h1: 600 42px/48px var(--base-ffamily);
+    --font-h2: 500 32px/36px var(--base-ffamily);
+    --font-h3: 600 20px/24px var(--base-ffamily);
+    --font-h4: 500 16px/24px var(--base-ffamily);
+    --font-base: 400 14px/18px var(--base-ffamily);
+    --font-small: 400 12px/16px var(--base-ffamily);
+    --margin-list: 12px;
+    --margin-base: 12px;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --font-h1: 600 32px/36px var(--base-ffamily);
+    --font-h2: 500 24px/28px var(--base-ffamily);
+    --font-h3: 600 18px/24px var(--base-ffamily);
+    --font-h4: 500 14px/18px var(--base-ffamily);
+    --font-base: 400 12px/16px var(--base-ffamily);
+    --font-small: 400 10px/14px var(--base-ffamily);
+  }
+}
+.textcontent {
+  font: var(--font-base);
+}
+.textcontent h1,
+.textcontent .h1 {
+  font: var(--font-h1);
+}
+.textcontent h1:not(:last-child),
+.textcontent .h1:not(:last-child) {
+  margin-bottom: var(--margin-title);
+}
+.textcontent h1:not(:first-child),
+.textcontent .h1:not(:first-child) {
+  margin-top: var(--margin-title);
+}
+.textcontent h2,
+.textcontent .h2 {
+  font: var(--font-h2);
+}
+.textcontent h2:not(:last-child),
+.textcontent .h2:not(:last-child) {
+  margin-bottom: var(--margin-title);
+}
+.textcontent h2:not(:first-child),
+.textcontent .h2:not(:first-child) {
+  margin-top: var(--margin-title);
+}
+.textcontent h3,
+.textcontent .h3 {
+  font: var(--font-h3);
+}
+.textcontent h3:not(:last-child),
+.textcontent .h3:not(:last-child) {
+  margin-bottom: var(--margin-base);
+}
+.textcontent h3:not(:first-child),
+.textcontent .h3:not(:first-child) {
+  margin-top: var(--margin-title);
+}
+.textcontent h4,
+.textcontent .h4 {
+  font: var(--font-h4);
+}
+.textcontent h4:not(:last-child),
+.textcontent .h4:not(:last-child) {
+  margin-bottom: var(--margin-base);
+}
+.textcontent h4:not(:first-child),
+.textcontent .h4:not(:first-child) {
+  margin-top: var(--margin-base);
+}
+.textcontent p:not(:last-child) {
+  margin-bottom: var(--margin-base);
+}
+.textcontent li {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  position: relative;
+}
+.textcontent ol {
+  list-style-type: decimal;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-list);
+  padding-left: 24px;
+}
+.textcontent ol:not(:last-child) {
+  margin-bottom: var(--margin-list);
+}
+.textcontent ol:not(:first-child) {
+  margin-top: var(--margin-list);
+}
+.textcontent ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-list);
+}
+.textcontent ul:not(:last-child) {
+  margin-bottom: var(--margin-list);
+}
+.textcontent ul:not(:first-child) {
+  margin-top: var(--margin-list);
+}
+.textcontent ul li {
+  display: list-item;
+  padding-left: 28px;
+}
+.textcontent ul li::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+  background: #808080;
+  border-radius: 50%;
+}
